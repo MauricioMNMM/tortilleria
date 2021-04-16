@@ -1,0 +1,371 @@
+body {
+  margin: 0px;
+  background-color: #857c7c;
+}
+.encabezado {
+  width: 100%;
+  display: block;
+}
+.logo {
+  background-image: url(imagenes/wallpaper2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#title {
+  padding: 10px;
+  margin: 0px;
+  display: block;
+  background-color: rgb(250, 218, 34);
+}
+#title h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 45px;
+  font-family: serif;
+  font-style: italic;
+  margin: 0px;
+  margin-top: 5px;
+}
+#logotipo {
+  display: flex;
+  background-image: url(imagenes/logoRedondo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  height: 200px;
+}
+#divNav {
+  display: block;
+  width: 100%;
+}
+.navegador {
+  display: flex;
+  justify-content: center;
+}
+.navegador ul {
+  width: 80%;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+}
+.navegador ul a {
+  width: 80%;
+  padding: 2%;
+  background-color: rgb(244, 247, 83);
+  border: 1px solid rgb(185, 161, 24);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+  transition: 400ms;
+  /*transition-delay: 0s;*/
+  text-decoration: none;
+}
+.navegador ul a:hover {
+  background-color: rgb(254, 255, 185);
+  transform: scale(1.1);
+}
+.navegador ul li {
+  color: rgb(49, 49, 49);
+  font-size: 23px;
+  text-align: center;
+  align-self: center;
+  font-weight: 600;
+}
+
+.divInfo {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.informacion {
+  display: block;
+  text-align: center;
+  background-color: rgb(255, 255, 118);
+  width: 70%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.informacion h2 {
+  font-size: 30px;
+  color: rgb(53, 53, 53);
+  font-family: "Roboto", sans-serif;
+}
+.contHoriz {
+  margin-top: 50px;
+  display: block;
+}
+.mision {
+  display: block;
+  color: rgb(61, 61, 61);
+  /*border: 1px solid black;*/
+}
+.mision h4 {
+  margin: 0px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mision p {
+  /*border: 1px solid black;*/
+  text-align: center;
+  font-size: 16px;
+  width: 500px;
+  background-color: rgb(255, 255, 180);
+  padding: 1rem;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.texto1 {
+  display: flex;
+  justify-content: center;
+  /*border: 1px solid black;*/
+  /*background-color: rgb(255, 255, 180);*/
+  width: 100%;
+}
+/*VISION*/
+.vision {
+  display: block;
+  justify-content: center;
+  color: rgb(61, 61, 61);
+}
+.vision h4 {
+  margin: 0px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.vision p {
+  background-color: rgb(255, 255, 180);
+  padding: 1rem;
+  text-align: justify;
+  width: 500px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*HISTORIA*/
+.historia {
+  display: block;
+  justify-content: center;
+  color: rgb(61, 61, 61);
+}
+.historia h4 {
+  margin: 0px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.historia p {
+  background-color: rgb(255, 255, 180);
+  padding: 1rem;
+  text-align: justify;
+  width: 500px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*FOOTER*/
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(146, 146, 146);
+}
+.footer p {
+  margin: 1rem;
+  color: white;
+}
+.redes {
+  float: right;
+  border: 1px solid black;
+}
+
+/*PRODUCTOS*/
+.productos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem auto;
+  position: relative;
+}
+.nuestrosProductos {
+  margin: 1rem auto;
+  display: block;
+  text-align: center;
+  color: #ecebe2;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  /*margin-top: 2rem;*/
+}
+.productos article {
+  width: 70%;
+  display: flex;
+  align-self: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff839;
+  border-radius: 3px;
+  flex-wrap: wrap;
+}
+.productos article form {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  align-self: center;
+  margin: 1rem;
+  width: 200px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.79);
+}
+.productos article form input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-bottom: 2px;
+  border: 2px solid grey;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1px;
+}
+
+#huevo {
+  background-image: url(imagenes/egg-4059957_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  height: 200px;
+}
+#chorizo {
+  background-image: url(imagenes/chorizo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  height: 200px;
+}
+#frijoles {
+  background-image: url(imagenes/frijoles2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 200px;
+}
+#Pollo-frito {
+  background-image: url(imagenes/food-2202359_640.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 200px;
+}
+#tortilla-harina {
+  background-image: url(imagenes/img_tortillas_de_harina.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 200px;
+}
+#chocolate {
+  background-image: url(imagenes/chocolate-rosa.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  height: 200px;
+}
+#texto-chocolate {
+  width: 100px;
+}
+.boton-enviar {
+  width: 150px;
+  margin: 1rem auto;
+  background-color: rgb(244, 247, 83);
+  font-size: 20px;
+  transition: 600ms;
+}
+.boton-enviar:hover {
+  background-color: rgb(254, 255, 216);
+}
+#div-formu {
+  display: flex;
+  justify-content: center;
+}
+.cuenta2 {
+  /*padding: 100px 0px 100px 0px;*/
+  width: 200px;
+  border: 1px solid black;
+  display: none;
+  position: absolute;
+  margin: 0px auto;
+  padding: 1rem;
+  bottom: 100px;
+  background-color: burlywood;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.cuenta2 input {
+  font-size: 15px;
+}
+.cuenta2 button {
+  font-size: 15px;
+}
+.boton-enviar:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.container iframe {
+  width: 70%;
+  box-shadow: 7px 7px 15px 6px rgba(252, 248, 8, 0.384);
+}
+/*Slider*/
+.slider {
+  width: 100%;
+}
+.swiper-wrape div {
+  height: 100px;
+}
+.redes {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+.redes h2 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icons img {
+  height: 60px;
+}
+.icons img:hover {
+  transform: scale(1.1);
+}

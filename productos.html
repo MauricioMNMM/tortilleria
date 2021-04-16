@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseñoTortilleria.css">
+    <link rel="icon" type="image/png" href="imagenes/logoRedondo.png">
+    <title>Productos</title>
+</head>
+
+<body>
+    <header id="divNav">
+        <nav class="navegador">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="productos.html">
+                    <li>Productos</li>
+                </a>
+                <a href="ubicacion.html">
+                    <li>¿Donde nos ubicamos?</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="nuestrosProductos"><u>Nuestros Productos</u></h2>
+    <section class="productos">
+            <article>
+                <form for="medio_huevo">
+                    <div id="huevo"></div>
+                    <label>$20 Medio de huevo</label>
+                    <br>
+                    <input type="number" placeholder="¿Cuantos medios?" id="medio_huevo">
+                    <input type="number" placeholder="¿Cuantos kilos?" id="kilo_huevo">
+                </form>
+                <form>
+                    <div id="tortilla-harina"></div>
+                    <label>$1 Pieza de Tortilla</label>
+                    <br>
+                    <input type="number" placeholder="¿Cuantas Piezas?" id="tortilla">
+                </form>
+                <form>
+                    <div id="frijoles"></div>
+                    <label>$14 Medio de frijoles</label>
+                    <br>
+                    <input type="number" placeholder="¿Cuantos medios?" id="medio_frijoles">
+                    <input type="number" placeholder="¿Cuantos Litros?" id="litro_frijoles">
+                </form>
+            </article>
+            <article>
+                <form>
+                    <div id="Pollo-frito"></div>
+                    <label>$10 Piza de pollo</label>
+                    <br>
+                    <input type="number" placeholder="¿Cuantas Piezas?" id="pieza_pollo">
+                </form>
+                <form>
+                    <div id="chorizo"></div>
+                    <label>$10 Chorizo por pieza</label>
+                    <br>
+                    <input type="number" placeholder="¿Cuantas Piezas?" id="pieza_chorizo">
+                </form>
+                <form>
+                    <div id="chocolate"></div>
+                    <label id="texto-chocolate">Gratis una bolsa de 5 chocolates en la compra de todos los productos</label>
+                    <!--<br>
+                    <input type="number" placeholder="Cuantas Tortillas">-->
+                </form>
+            </article>
+            <div id="div-formu">
+                <form id="cuenta"  class="cuenta2" for="Enviar">
+                    <label for="nombre-user">Nombre:</label>
+                    <input type="text" id="nombre-user" placeholder="Nombre y Apellido" required>
+                    <label for="email-user">Correo Electronico:</label>
+                    <input type="email" id="email-user" placeholder="Escriba su correo" required>
+                    <button type="button" value="Atras" onclick="Atras()">Atras</button>
+                    <input type="submit" placeholder="Enviar" onclick="enviar_formu(); enviar()" value="Enviar">
+                </form>
+            </div>
+        <button type="button" onclick="Enviar_Compra()" class="boton-enviar">Enviar pedido</button>
+    </section>
+    <footer class="footer">
+        <p>DERECHOS RESERVADOS: TORTILLAS DE HARINA "LOS TRES TRIGALES"</p>
+    </footer>
+    <script src="logicaTorti.js"></script>
+</body>
+
+</html>
